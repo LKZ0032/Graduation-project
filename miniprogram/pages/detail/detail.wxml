@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<view>
+	<!-- // 引入模板 -->
+	<!-- <import src="../../wxParse/wxParse.wxml" /> -->
+	<!-- //这里data中article为bindName -->
+	<!-- <template is="wxParse" data="{{wxParseData:naem.nodes}}" />
+  <template is="wxParse" data="{{wxParseData:component.nodes}}" />
+  <template is="wxParse" data="{{wxParseData:effect.nodes}}" />
+  <template is="wxParse" data="{{wxParseData:count.nodes}}" />
+  <template is="wxParse" data="{{wxParseData:ADRs.nodes}}" /> -->
+  {{name}}
+  {{component}}
+  {{effect}}
+  {{count}}
+  {{ADRs}}
+</view>

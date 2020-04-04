@@ -1,0 +1,400 @@
+<!--pages/scan/scan.wxml-->
+<!-- <text bindtap="scan">pages/scan/scan.wxml</text> -->
+<view style="height:100%">
+	<van-button color="#d81e06" plain style="width: 100%; height: 100%; display: flex; align-items:center" size="large" icon="search" bindtap="scan">扫一扫</van-button>
+	<!-- <van-button type="default" style="width: 100%; height: 100%; display: flex; align-items:center;">默认按钮</van-button> -->
+	<van-dialog id="van-dialog" />
+</view>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>苏黄止咳胶囊价格对比 24粒_315网</title>
+	<link rel="dns-prefetch" href="//hm.baidu.com" />
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+	<script type="text/javascript">
+		var forcePc = /(^|;\s*)pc=/.test(document.cookie);
+		if (/(Android|iPhone)/.test(navigator.userAgent) && !forcePc) {
+			location.href = 'https://www.315jiage.cn/mn108851.aspx';
+		}
+	</script>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	<meta name="description" content="由扬子江药业集团北京海燕药业有限公司生产的苏黄止咳胶囊(护佑)(0.45*24粒)的价格对比信息和购买联系方式,该苏黄止咳胶囊(护佑)的批准文号为:国药准字Z20103075" />
+	<meta name="keywords" content="润肺止咳胶囊,苏黄止咳胶囊" />
+	<link rel="canonical" href="https://www.315jiage.cn/z-KeChuan/108851.htm" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="../style/wangqi/style.min.css" type="text/css" />
+	<script type="text/javascript" src="../inc/jquery.min.js"></script>
+	<script type="text/javascript" src="../inc/iwms.min.js"></script>
+	<script type="text/javascript">
+		iwms.urlPrefix = "../";
+	</script>
+	<script type="text/javascript">
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?4cce664ec5d8326cc457ab09053c15b2";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.315jiage.cn/mn108851.aspx" />
+	<meta property="og:type" content="product" />
+	<meta property="og:image" content="https://www.315jiage.cn/upload/2018-07/18070213438777t.jpg" />
+	<meta property="og:product:price" content="24.80" />
+	<meta property="og:product:orgprice" content="68.32" />
+	<style type="text/css">
+		.titleLine {
+			margin-right: 60px
+		}
+	</style>
+</head>
+
+<body>
+	<div class="topBar">
+		<div class="container">
+			<div id="topUser" style="float:right"><a href="#" onclick="iwms.logPop()">登录</a> <a href="../memberreg.aspx" rel="nofollow">注册</a> <a href="../rssFeed.aspx" target="_blank" rel="nofollow"><img src="../pic/b.gif" class="icoRss" alt="rss订阅" /></a></div>
+			<div class="gray"><a href="/">药品价格315网</a> - <a href="../shops.aspx">药店</a> - <a href="../c119.aspx">中成药</a> - <a href="../c118.aspx">西药</a> - <a href="../c130.aspx">其他价格</a> | <a href="../c66.aspx">咨询</a> - <a href="../c14.aspx">曝光</a></div>
+		</div>
+	</div>
+	<div class="container margin-top">
+		<div class="ntes-yodao mod">
+			<div class="yodao-main"><a href="/" class="yodao-logo" title="快速查询药品价格">药品查询</a>
+				<form name="frm_head" target="_blank" method="get" action="../search.aspx" id="sform"><input type="hidden" name="where" value="title" />
+					<div class="wgt-yodao-search">
+						<div class="yodao-search-category"><span class="search-category-item" id="spanel"> <a class="s1" href="#title">综合</a> <a class="s2" href="#medicineTitle">药价</a> <a class="s2" href="#certification">批准文号</a> <a class="s2" href="#barcode">条码</a> <a class="s2" href="#factory">药厂</a> <a class="s2" href="#shop">药店</a> <a class="s2" href="#disease">疾病</a> </span></div>
+						<div id="ydQuery"><input id="search" name="keyword" onmouseover="this.focus()" onfocus="this.select()" class="ui-ipt-enter" type="text" /><button type="submit" class="ui-btn-submit">搜 索</button></div>
+					</div>
+				</form>
+				<div class="yodao-entry c-entry"><a class="ui-btn-cube" href="../memberNewsAdd.aspx" target="_blank">我要<br />提问</a></div>
+			</div>
+		</div>
+		<div id="middle" itemscope="itemscope" itemtype="http://schema.org/Product">
+			<div class="show-main fl">
+				<div class="text-lg margin-top"><a href="https://www.315jiage.cn">药品价格</a> → <a href="../c119.aspx">成药</a> → <a href="../c124.aspx">z-咳喘</a></div>
+				<div class="show_cont margin-top" id="bodyTd" style="padding-bottom:0">
+					<div id="printBody" style="word-break:break-all">
+						<div class="titleLine">
+							<h1 class="aTitle margin-bottom">苏黄止咳胶囊价格对比 24粒</h1>
+							<div style="margin-top:15px"><span class="title-contact">药店入驻 厂家报价 <a href="javascript:iwms.serviceOpen()">请点击这里联系我们</a></span></div>
+						</div>
+						<div id="content" style="margin-bottom:0">
+							<p class="price">[药品价格315网建议销售价格] 零售价格：68.32元 批发价格：0.00元 价格趋势：平</p>
+							<div id="supplier-ctn"></div>
+							<p>产品名称：<span itemprop="name"><u>苏黄止咳胶囊</u> (护佑)</span>　　拼音简码：<u>SHZKJN</u></p>
+							<p>规格：<u>0.45*24粒</u>　剂型：　包装单位：<u>盒</u></p>
+							<p>批准文号：<u><a href="../apn224024.aspx">国药准字Z20103075</a></u> <span class="cRed">本品为处方药，须凭处方购买</span></p>
+							<p>生产厂家：<u>扬子江药业集团北京海燕药业有限公司</u></p>
+							<p>条形码：6939314900208</p>
+							<p>主治疾病：变异型哮喘&nbsp; 干咳无痰&nbsp; 肺气失宣&nbsp; 咽痒&nbsp; 咳嗽&nbsp; 风邪犯肺</p>
+						</div>
+					</div>
+				</div>
+				<div class="show_cont" style="padding-top:0">
+					<div class="tabs">
+						<div class="tabs-bar">
+							<ul class="horizontal">
+								<li><a href="#tab1">说明书</a></li>
+								<li class="active"><a href="#tab2">补充说明</a></li>
+								<li><a href="#tab3">相关信息</a></li>
+							</ul><br style="clear:both" />
+						</div>
+						<div id="tab1" class="content">
+							<ul class="property">
+								<li>【产品名称】苏黄止咳胶囊</li>
+								<li>【商品名/商标】<h2 class="medicine-attr">护佑</h2>
+								</li>
+								<li>【规格】0.45*24粒</li>
+								<li>【主要成份】麻黄、紫苏叶、地龙、枇杷叶、紫苏子、蝉蜕、前胡、牛蒡子、五味子。</li>
+								<li>【功能主治/适应症】<h2 class="medicine-attr">疏风宣肺，止咳利咽。苏黄止咳胶囊 用于风邪犯肺，肺气失宣所致的咳嗽，咽痒，痒时咳嗽，或呛咳阵作，气急，遇冷空气、异味等因素突发或加重，或夜卧晨起咳剧，多呈反复发作，干咳无痰或少痰，舌苔薄白等。感冒后咳嗽及咳嗽变异型哮喘见上述症候者。</h2>
+								</li>
+								<li>【用法用量】口服。一次3粒，一日3次。疗程7~14天。</li>
+								<li>【不良反应】偶见恶心、呕吐，胃部不适，便秘，咽干.</li>
+								<li>【注意事项】苏黄止咳胶囊注意事项详见说明书。</li>
+								<li>【生产厂家】扬子江药业集团北京海燕药业有限公司</li>
+								<li>【批准文号】国药准字Z20103075</li>
+								<li>【生产地址】北京市昌平区生命园路16号</li>
+								<li>【条形码】6939314900208</li>
+							</ul>
+						</div>
+						<div id="tab2" class="content">
+							<p><img src="../upload/2018-07/18070213438777.jpg" alt="苏黄止咳胶囊(护佑)" width="520" height="390" /></p>
+							<p>苏黄止咳胶囊疏风宣肺，止咳利咽。苏黄止咳胶囊 用于风邪犯肺，肺气失宣所致的咳嗽，咽痒，痒时咳嗽，或呛咳阵作，气急，遇冷空气、异味等因素突发或加重，或夜卧晨起咳剧，多呈反复发作，干咳无痰或少痰，舌苔薄白等。感冒后咳嗽及咳嗽变异型哮喘见上述症候者。</p>
+						</div>
+						<div id="tab3" class="content">
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/318043.htm" class="nLink" target="_blank">善举润肺止咳胶囊价格对比 40粒</a></div>
+								<div class="sum">摘要：善举润肺止咳胶囊养阴清热，润肺止咳。用于肺热燥咳，或热病伤阴所致咳嗽。口服，一次2～4粒，一日3次。孕妇禁用。有支气管扩张、肺脓疡、肺心病、肺结核患者出现咳嗽时应去医院就诊。儿童、年老体弱者应在医师指导下服用。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/303939.htm" class="nLink" target="_blank">鲁抗润肺止咳胶囊价格对比 12粒</a></div>
+								<div class="sum">摘要：润肺止咳胶囊(添茂/鲁抗)养阴清热，润肺止咳。用于肺热燥咳，或热病伤阴所致咳嗽。本品为硬胶囊剂，内容物为黄色至黄褐色的粉未及颗粒；气微香，味微苦。口服，一次2～4粒，一日3次。不宜在服本品期间同时服用滋补性中药。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/292787.htm" class="nLink" target="_blank">润肺止咳胶囊价格对比 48粒 青海鲁抗大地</a></div>
+								<div class="sum">摘要：润肺止咳胶囊为硬胶囊剂，内容物为黄色至黄褐色的粉未及颗粒；气微香，味微苦。养阴清热，润肺止咳。用于肺热燥咳，或热病伤阴所致咳嗽。口服，一次2～4粒，一日3次。如与其他药物同时使用可能会发生药物相互作用，详情请咨询医师或药师。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/283582.htm" class="nLink" target="_blank">修正润肺止咳胶囊价格对比 27粒</a></div>
+								<div class="sum">摘要：修正润肺止咳胶囊养阴清热，润肺止咳。用于肺热燥咳，或热病伤阴所致咳嗽。口服，一次2～4粒，一日3次。孕妇禁用。不宜在服药期间同时服用滋补性中药。有支气管扩张、肺脓疡、肺心病、肺结核患者出现咳嗽时应去医院就诊。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../html/c53/280964.htm" class="nLink" target="_blank">青海鲁抗大地药业润肺止咳胶囊抽检不合格</a></div>
+								<div class="sum">摘要：湖南省2018年第6期药品质量公告（2018年第4号），青海鲁抗大地药业有限公司润肺止咳胶囊上黑榜，药品规格：每粒装0.35g，生产批号：20161103，不合格项目：【性状】，检验机构：岳阳市食品药品检验所。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/280075.htm" class="nLink" target="_blank">九优清肺宁嗽丸价格对比 20丸</a></div>
+								<div class="sum">摘要：九优清肺宁嗽丸清肺、止咳、化痰。用于肺热咳嗽，痰多粘稠。口服，一次1丸，一日2次，小儿酌减。忌食辛辣、油腻食物；支气管扩张、肺脓疡、肺心病、肺结核患者应在医师指导下服用；服用三天病证无改善，应停止服用，去医院就诊。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../x-KeChuan/278434.htm" class="nLink" target="_blank">罗津厄多司坦分散片价格对比 12片</a></div>
+								<div class="sum">摘要：罗津厄多司坦分散片为祛痰止咳药。用于急慢性支气管炎，阻塞性肺气肿等疾病的咳嗽、咳痰，特别是痰液粘稠不易咳出来。口服，每次两片，一日2次。应避免与强力镇咳药同时应用。胃及十二指肠溃疡患者慎用。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/268242.htm" class="nLink" target="_blank">仁和润肺止咳胶囊价格对比 28粒</a></div>
+								<div class="sum">摘要：润肺止咳胶囊(仁和)为硬胶囊剂，内容物为黄色至黄褐色的粉未及颗粒；气微香，味微苦。养阴清热，润肺止咳。用于肺热燥咳，或热病伤阴所致咳嗽。口服，一次2～4粒，一日3次。孕妇禁用。忌烟、酒及辛辣、生冷、油腻性食物。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/259456.htm" class="nLink" target="_blank">正远润肺止咳胶囊价格对比 18粒</a></div>
+								<div class="sum">摘要：正远润肺止咳胶囊养阴清热，润肺止咳。用于肺热燥咳，或热病伤阴所致咳嗽。口服，一次2～4粒，一日3次。孕妇禁用。不宜在服药期间同时服用滋补性中药。有支气管扩张、肺脓疡、肺心病、肺结核患者出现咳嗽时应去医院就诊。<br /></div>
+							</div>
+							<div class="sResult">
+								<div class="title"><a href="../z-KeChuan/246715.htm" class="nLink" target="_blank">麻苏止咳颗粒价格对比 6袋 广西双蚁</a></div>
+								<div class="sum">摘要：麻苏止咳颗粒开水冲服，一次15克，一日3次。疏风散热，宣肺止咳，理气化痰。用于中、轻度外感风寒、肺气不宣所致的咳嗽，咯痰，恶寒发热，头痛无汗，肢体酸痛，鼻塞声重。如与其他药物同时使用可能会发生药物相互作用，详情请咨询医师或药师。<br /></div>
+							</div>
+							<p>&nbsp; 更多相关：<a href="../tag26204.aspx" target="_blank">润肺止咳胶囊</a>&nbsp; <a href="../tag29590.aspx" target="_blank">苏黄止咳胶囊</a>&nbsp;</p>
+						</div>
+					</div>
+					<div>
+						<ul id="digg" class="digg">
+							<li class="digg1">0</li>
+							<li class="digg2"><a href="javascript:" onclick="iwms.diggIt(this,iwms.aId)">顶一下</a></li>
+						</ul>
+						<div style="padding:14px 0 0 0"><span class="advg-19"></span></div>
+					</div>
+					<div class="nearNews">
+						<div class="prevNews"><a href="../z-KeChuan/107272.htm">价格对比:复方川贝精片 0.25g*100s 邯郸摩罗丹药业</a></div>
+						<div class="nextNews"><a href="../z-KeChuan/92778.htm">橘红化痰丸价格对比 10丸 达仁堂制药厂</a></div>
+					</div>
+				</div>
+				<div class="show_cont">
+					<form name="fmRemarkSt" onsubmit="return remark.post(this)"><input type="hidden" value="1" name="face" /> 手机： <input type="text" name="username" maxlength="11" style="width:100px" class="inputbg" /> <input type="checkbox" id="rmAnonymitySt" name="anonymity" /><label for="rmAnonymitySt">匿名</label> 字数 <input type="text" class="remark-body-len" size="3" readonly="readonly" value="0" /> <br /> <textarea name="body" cols="40" rows="4" class="input-remark" onkeydown="remark.dispLen(this)" onkeyup="remark.handle(event,this);remark.dispLen(this)"></textarea> <input type="checkbox" checked="checked" id="rmAgreeSt" /><label for="rmAgreeSt">同意网友评论仅供其表达个人看法，并不表明本网站同意其观点或证实其描述。</label><button type="submit" class="pulun">马上发表</button></form>
+					<div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/AggregateOffer">
+						<meta itemprop="lowPrice" content="CNY24.80" />
+						<meta itemprop="highPrice" content="CNY128.00" />
+						<meta itemprop="offerCount" content="67" />
+					</div>
+					<div class="reCont" id="reContainer">
+						<div class="reHead"><span class="reName">185****1771</span>发表于 <span class="reDate">2020-03-10 18:09:10</span></div>
+						<div class="reBody">我就想知道为啥这药这么贵 吃不起呀</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,1035907)">回复</a> <a href="javascript:" onclick="remark.vote(this,1035907,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,1035907,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,1035907)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,1035907)">删除</a></div>
+						<div class="reHead"><span class="reName">185****1771</span>发表于 <span class="reDate">2020-03-10 18:07:08</span></div>
+						<div class="reBody">
+							<fieldset>
+								<legend>回复 <span class="reName">187****1879</span> 的评论</legend>
+								<div>我前两天买的76一盒！18粒是不是药店糊卖呀 <a href="javascript:" class="pull-right" onclick="remark.disp(this,1004248)">回复</a></div>
+							</fieldset>沈阳这面9粒38 国大药房活动 会员买四送一
+						</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,1035903)">回复</a> <a href="javascript:" onclick="remark.vote(this,1035903,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,1035903,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,1035903)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,1035903)">删除</a></div>
+						<div class="reHead"><span class="reName">187****1879</span>发表于 <span class="reDate">2020-02-15 14:27:32</span></div>
+						<div class="reBody">
+							<fieldset>
+								<legend>回复 <span class="reName">153****7709</span> 的评论</legend>
+								<div>我在西安怡康药房9粒35.00 <a href="javascript:" class="pull-right" onclick="remark.disp(this,809631)">回复</a></div>
+							</fieldset>我前两天买的76一盒！18粒是不是药店糊卖呀
+						</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,1004248)">回复</a> <a href="javascript:" onclick="remark.vote(this,1004248,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,1004248,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,1004248)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,1004248)">删除</a></div>
+						<div class="reHead"><span class="reName">匿名</span>发表于 <span class="reDate">2019-12-23 13:38:41</span></div>
+						<div class="reBody">京东大药房买的满减后折合55一盒</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,953856)">回复</a> <a href="javascript:" onclick="remark.vote(this,953856,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,953856,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,953856)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,953856)">删除</a></div>
+						<div class="reHead"><span class="reName">153****7709</span>发表于 <span class="reDate">2019-07-12 17:56:28</span></div>
+						<div class="reBody">我在西安怡康药房9粒35.00</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,809631)">回复</a> <a href="javascript:" onclick="remark.vote(this,809631,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,809631,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,809631)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,809631)">删除</a></div>
+						<div class="reHead"><span class="reName">166****1430</span>发表于 <span class="reDate">2019-06-02 08:09:35</span></div>
+						<div class="reBody">
+							<fieldset>
+								<legend>回复 <span class="reName">158****1328</span> 的评论</legend>
+								<div>我在医院买的77一盒，不知道别的地方多少钱 <a href="javascript:" class="pull-right" onclick="remark.disp(this,705012)">回复</a></div>
+							</fieldset>效果怎么样效果不错的话我也想去买两盒
+						</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,778692)">回复</a> <a href="javascript:" onclick="remark.vote(this,778692,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,778692,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,778692)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,778692)">删除</a></div>
+						<div class="reHead"><span class="reName">199****8196</span>发表于 <span class="reDate">2019-04-30 15:07:02</span></div>
+						<div class="reBody">苏黄止咳委托生产地址在嗯，泰州市高港区永安洲镇龙凤堂西路9号。是真的假的药啊？</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,754802)">回复</a> <a href="javascript:" onclick="remark.vote(this,754802,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,754802,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,754802)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,754802)">删除</a></div>
+						<div class="reHead"><span class="reName">wx-4d4a83ec</span>发表于 <span class="reDate">2019-04-30 15:02:22</span></div>
+						<div class="reBody">
+							<fieldset>
+								<legend>回复 <span class="reName">匿名</span> 的评论</legend>
+								<div>我买24粒的48，怀疑假的，生产地址在泰州市 <a href="javascript:" class="pull-right" onclick="remark.disp(this,753371)">回复</a></div>
+							</fieldset>建议您关注我们的微信公众号：药品价格315网（yaopinjiage），我们的微信公众号里面有“真假鉴别-扫描条码”功能，用我们的微信扫描“条形码”或“电子监管码”，看看显示的是不是对的。
+						</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,753373)">回复</a> <a href="javascript:" onclick="remark.vote(this,753373,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,753373,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,753373)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,753373)">删除</a></div>
+						<div class="reHead"><span class="reName">匿名</span>发表于 <span class="reDate">2019-04-30 14:49:37</span></div>
+						<div class="reBody">
+							<fieldset>
+								<legend>回复 <span class="reName">187****6572</span> 的评论</legend>
+								<div>支气管炎，我买了500块，我也是醉了 <a href="javascript:" class="pull-right" onclick="remark.disp(this,302388)">回复</a></div>
+							</fieldset>我买24粒的48，怀疑假的，生产地址在泰州市
+						</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,753371)">回复</a> <a href="javascript:" onclick="remark.vote(this,753371,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,753371,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,753371)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,753371)">删除</a></div>
+						<div class="reHead"><span class="reName">158****1328</span>发表于 <span class="reDate">2019-02-12 15:31:21</span></div>
+						<div class="reBody">我在医院买的77一盒，不知道别的地方多少钱</div>
+						<div class="reFun"><a href="javascript:" onclick="remark.disp(this,705012)">回复</a> <a href="javascript:" onclick="remark.vote(this,705012,1)">支持</a><span> (0)</span> <a href="javascript:" onclick="remark.vote(this,705012,0)">反对</a><span> (0)</span>　<a href="javascript:" onclick="remark.intervene(this,705012)">商家介入</a>　<a href="javascript:" onclick="remark.del(this,705012)">删除</a></div>
+					</div>
+					<div style="text-align:center;padding-top:15px"><a href="../rm108851.aspx" target="_blank" class="btn-white">查看全部评论 <span class="gray">(81)</span></a></div>
+					<div style="border-bottom:3px solid #c7dcf1;padding-left:.5em;font-size:14px;line-height:30px;font-family:yahei">＞已订购用户评价</div>
+					<div class="reCont">
+						<div class="reHead">
+							<div class="reLayer">购买自 岐山县济民医药超市</div><span class="reName">159****4713</span> 发表于 <span class="reDate">2020-04-01 18:19:18 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.30元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 德惠一通大药房</div><span class="reName">138****8486</span> 发表于 <span class="reDate">2020-03-31 18:19:13 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.00元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 岐山县济民医药超市</div><span class="reName">135****9221</span> 发表于 <span class="reDate">2020-03-31 18:19:08 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.30元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 长春益人大药房</div><span class="reName">151****6173</span> 发表于 <span class="reDate">2020-03-31 13:01:22 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：31.80元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 岐山县济民医药超市</div><span class="reName">135****9221</span> 发表于 <span class="reDate">2020-03-30 23:19:03 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.30元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 德惠一通大药房</div><span class="reName">135****7468</span> 发表于 <span class="reDate">2020-03-30 12:19:31 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.00元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 长春益人大药房</div><span class="reName">181****9886</span> 发表于 <span class="reDate">2020-03-29 08:43:13 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：31.80元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 速度快，服务好，质量合格。</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 德惠一通大药房</div><span class="reName">139****2363</span> 发表于 <span class="reDate">2020-03-28 12:19:16 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.00元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 德惠一通大药房</div><span class="reName">139****2363</span> 发表于 <span class="reDate">2020-03-28 12:19:14 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.00元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+						<div class="reHead">
+							<div class="reLayer">购买自 德惠一通大药房</div><span class="reName">131****1076</span> 发表于 <span class="reDate">2020-03-26 23:19:02 </span>
+						</div>
+						<div class="reBody"><span class="text-muted">成交单价：32.00元/盒</span> &nbsp; <span class="badge badge-info">满意</span> 默认好评</div>
+					</div>
+					<div style="text-align:center;padding-top:15px"><a href="../brm108851.aspx" target="_blank" class="btn-white">查看全部评价</a></div>
+				</div>
+			</div>
+			<div class="show-side fr">
+				<div class="show_list">
+					<div class="h4">
+						<div class="moreR"><img src="../upload/sr1.png" alt="*" /></div><b>头条推荐</b>
+					</div>
+					<div class="mm">
+						<ul class="nl">
+							<li>[<a href="../c107.aspx">医药政策</a>] <a href="../html/YiYaoZhengCe/300486.htm" target="_blank" class="highlight" title="中华人民共和国药品管理法(2019年8月26日修订)">中华人民共和国药品管理法(2019年8月</a></li>
+							<li>[<a href="../c29.aspx">关于本站</a>] <a href="http://www.315jiage.cn/membernewsadd.aspx" target="_blank" class="highlight">我要咨询　　　我要举报</a></li>
+							<li>[<a href="../c29.aspx">关于本站</a>] <a href="../html/c29/124694.htm" target="_blank" class="highlight" title="药品价格315网血泪诉　写给有良知的中国人">药品价格315网血泪诉　写给有良知的中</a></li>
+							<li>[<a href="../c29.aspx">关于本站</a>] <a href="../html/c29/12742.htm" target="_blank">网上购药如何辨别药品真假-假药鉴别</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="show_list">
+					<div class="h4"><b>周排行</b></div>
+					<div class="mm1">
+						<ul class="nl">
+							<li>[<a href="../c215.aspx">补肾壮阳</a>] <a href="../BuShenZhuangYang/147122.htm" target="_blank">德国益力可-是真药吗？德国益粒可</a></li>
+							<li>[<a href="../c53.aspx">产品曝光</a>] <a href="../html/c53/26835.htm" target="_blank">国珍松花粉骗人鬼话不要信</a></li>
+							<li>[<a href="../c146.aspx">z-男科</a>] <a href="../z-NanKe/85230.htm" target="_blank">益肾壮阳膏价格对比 新天夫</a></li>
+							<li>[<a href="../c217.aspx">皮肤病</a>] <a href="../PiFuBing/207470.htm" target="_blank">天下无尤是真药吗？</a></li>
+							<li>[<a href="../c127.aspx">z-未分类</a>] <a href="../z-WeiFenLei/80064.htm" target="_blank">仙灵骨葆胶囊价格对比 50粒 国药集团</a></li>
+							<li>[<a href="../c161.aspx">x-肿瘤</a>] <a href="../x-ZhongLiu/79882.htm" target="_blank">吉非替尼片(易瑞沙)价格对比</a></li>
+							<li>[<a href="../c191.aspx">b-降三高</a>] <a href="../b-JiangSanGao/218853.htm" target="_blank">同仁堂牌葛根山药胶囊价格对比 60粒</a></li>
+							<li>[<a href="../c29.aspx">关于本站</a>] <a href="../html/c29/166022.htm" target="_blank">“生产厂家官方指导价格”上报流程</a></li>
+							<li>[<a href="../c29.aspx">关于本站</a>] <a href="../html/c29/15964.htm" target="_blank" title="药品价格315网-东莞力联信息技术有限公司">药品价格315网-东莞力联信息技术有限公</a></li>
+							<li>[<a href="../c53.aspx">产品曝光</a>] <a href="../html/c53/226038.htm" target="_blank">同仁堂牌葛根山药胶囊承诺不做违法广告</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="show_list">
+					<div class="h4">
+						<div class="moreR"><img src="../upload/sr1.png" alt="*" /></div><b>热点推荐</b>
+					</div>
+					<div class="mm">
+						<ul class="nl">
+							<li class="light"><a href="../z-KeChuan/108851.htm" target="_blank">苏黄止咳胶囊价格对比 24粒</a></li>
+							<li class="dark"><a href="../z-KeChuan/294835.htm" target="_blank">哮喘宁颗粒(苗疆箭)价格对比</a></li>
+							<li class="light"><a href="../z-KeChuan/207516.htm" target="_blank">小儿清热宣肺贴膏(摩美得)价格对比 20贴装</a></li>
+							<li class="dark"><a href="../z-KeChuan/294783.htm" target="_blank">补金片价格对比 百信药业 125片</a></li>
+							<li class="light"><a href="../z-KeChuan/151167.htm" target="_blank">肺力咳合剂价格对比 150ml</a></li>
+							<li class="dark"><a href="../z-KeChuan/195775.htm" target="_blank">补肺丸价格对比 养无极</a></li>
+							<li class="light"><a href="../z-KeChuan/78057.htm" target="_blank">京都念慈菴蜜炼川贝枇杷膏价格对比 300ml</a></li>
+							<li class="dark"><a href="../z-KeChuan/113844.htm" target="_blank">结核丸(劳克)价格对比 200丸</a></li>
+							<li class="light"><a href="../z-KeChuan/262850.htm" target="_blank">金水宝片价格对比 0.42g*24片 江西济民可信药业</a></li>
+							<li class="dark"><a href="../z-KeChuan/78032.htm" target="_blank">肺力咳合剂(健兴)价格对比 100ml</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="side_float">
+					<div class="show_list">
+						<div class="h4"><b>同类药品</b></div>
+						<div class="mm">
+							<ul class="nl">
+								<li><a href="../z-GanMao/321779.htm" target="_blank">金页维C银翘片价格对比 30片</a></li>
+								<li><a href="../x-KangGuoMin/321754.htm" target="_blank">圣健盐酸二氧丙嗪颗粒价格对比 17袋</a></li>
+								<li><a href="../z-GanMao/321748.htm" target="_blank">康芝岛风寒感冒颗粒价格对比 15袋</a></li>
+								<li><a href="../x-KeChuan/321148.htm" target="_blank">盾克磷酸苯丙哌林胶囊价格对比 20粒</a></li>
+								<li><a href="../ZhongYaoYinPian/321128.htm" target="_blank">同达堂胖大海价格对比</a></li>
+								<li><a href="../z-QingRe/320914.htm" target="_blank">三精双黄连口服液价格对比 12支</a></li>
+								<li><a href="../z-KeChuan/320842.htm" target="_blank">小儿咳喘灵颗粒价格对比 黄石燕舞 17袋</a></li>
+								<li><a href="../z-KeChuan/320820.htm" target="_blank">福临门枇杷止咳颗粒价格对比 12袋</a></li>
+								<li><a href="../z-KeChuan/320818.htm" target="_blank">枇杷止咳颗粒价格对比 15袋 张恒春药业</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div style="text-align:center;line-height:2;padding-bottom:8px"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002000244" rel="nofollow" target="_blank"><img style="vertical-align:top" src="../photos/gaBeian.png" alt="公安备案" width="20" height="20" />粤公网安备 44190002000244号</a>&nbsp;<a href="http://www.miibeian.gov.cn" rel="nofollow" target="_blank">粤ICP备10223721号</a> 药品信息资格证:(粤)-经营性-2018-0275&nbsp; (粤)网械平台备字(2019)第00012号&nbsp;<a href="/html/c29/15964.htm" target="_blank">关于我们</a><br />Copyright &copy;&nbsp;东莞力联信息技术有限公司&nbsp;<a href="/html/c29/30202.htm" target="_blank">争议信息处理流程</a>&nbsp;<a href="../html/c29/166022.htm" target="_blank">生产企业官方报价流程</a>&nbsp;<a href="../html/c29/192582.htm" target="_blank">保护隐私权</a>&nbsp;<a href="../html/c29/245244.htm" target="_blank">严正通告</a> 联系微信公众号:<a href="javascript:iwms.qrCodePop()">药品价格315网(yaopinjiage)</a></div>
+			<script type="text/javascript">
+				iwms.aId = 108851;
+				$(function() {
+					iwms.imgCont = $i('content');
+					iwms.imgResize();
+					InitContStyle();
+					iwms.getVars();
+				});
+			</script>
+		</div>
+	</div>
+	<script type="text/javascript" src="../inc/show.min.js"></script>
+	<script type="text/javascript" src="../inc/remark.min.js"></script>
+	<script type="text/javascript">
+		tabs.init();
+		iwms.imgCont = $i('tab2');
+		iwms.imgResize();
+		NTKF_PARAM.itemid = '30501';
+		remark.aId = 108851;
+		remark.maxSize = 500;
+		remark.minSize = 15;
+		remark.sourceEle = $(document.fmRemarkSt).find("button").get(0);
+		iwms.vCode = "42FB8318";
+		$(function() {
+			iwms.getAdvs(function() {
+				iwms.scrollFollow('#side_float', 0, 106);
+			});
+			suppliers.load(108851, 124);
+			iwms.loadSideBar(false);
+			iwms.getVars();
+		});
+	</script>
+</body>
+
+</html> -->

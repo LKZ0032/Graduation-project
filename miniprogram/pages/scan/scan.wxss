@@ -1,0 +1,4 @@
+/* pages/scan/scan.wxss */
+page{
+  height:100%
+}
