@@ -8,7 +8,7 @@ exports.main = async (event, context) => {
   // const wxContext = cloud.getWXContext()
   var str = event.webhtm;
   // var regu= /[a-zA-z]\-[a-zA-z]+/[^"]*/;
-　var res = str.match(/【.*?[^\<]*/g);
+　var res = str.match(/【.*?[^\<]*/g);//<li>.*?</li>（返回结果带<li>标签）
   return{
     re: res,
   }
