@@ -1,5 +1,5 @@
 // pages/detail/detail.js
-// var WxParse = require('../../wxParse/wxParse')
+var WxParse = require('../../wxParse/wxParse')
 const db = wx.cloud.database();
 Page({
 
@@ -13,25 +13,51 @@ Page({
     count: '',
     ADRs: ''
   },
+  playVoice: function () {
+    var plugin = requirePlugin("WechatSI");
+    plugin.textToSpeech({
+      lang: "zh_CN",
+      tts: true,
+      content: this.data.name + " " + this.data.count + " " + this.data.effect,
+      success: function (res) {
+        console.log("succ tts", res.filename)
+        const innerAudioContext = wx.createInnerAudioContext()
+        innerAudioContext.autoplay = true
+        innerAudioContext.src = res.filename
+          innerAudioContext.onPlay(() => {
+            console.log('开始播放')
+          })
+        innerAudioContext.onError((res) => {
+          console.log(res.errMsg)
+          console.log(res.errCode)
+        })
+      },
+      fail: function (res) {
+        console.log("fail tts", res)
+      }
+    })
+
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({
-      naem: options.name,
+      name: options.name,
       component: options.component,
       effect: options.effect,
       count: options.count,
       ADRs: options.ADRs
     })
-    // var naem = this.data.naem;
+    console.log(options.effect);
+    // var name = this.data.name;
     // var component = this.data.component;
     // var effect = this.data.effect;
     // var count = this.data.count;
     // var ADRs = this.data.ADRs;
     // var that = this;
-    // WxParse.wxParse('naem', 'html', naem, that,5);
+    // WxParse.wxParse('name', 'html', name, that,5);
     // WxParse.wxParse('component', 'html', component, that,5);
     // WxParse.wxParse('effect', 'html', effect, that,5);
     // WxParse.wxParse('count', 'html', count, that,5);

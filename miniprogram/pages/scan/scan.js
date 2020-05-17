@@ -48,9 +48,21 @@ Page({
                         name: db.command.eq(res.result.re[0])
                       }).get().then(
                         res => {
+                          // var re1=that.result.re[0].replace(/([^\x00-\xff]+)[^<]+/g,'');
+                          // var re2=that.result.re[3].replace(/([^\x00-\xff]+)[^<]+/g,'');
+                          // var re3=that.result.re[4].replace(/([^\x00-\xff]+)[^<]+/g,'');
+                          // var re4=that.result.re[5].replace(/([^\x00-\xff]+)[^<]+/g,'');
+                          // var re5=that.result.re[6].replace(/([^\x00-\xff]+)[^<]+/g,'');
                           if (res.data.length == 0) {
                             db.collection('medicine').add({
                                 // data 字段表示需新增的 JSON 数据
+                                // data: {
+                                //   name: re1,
+                                //   component: re2,
+                                //   effect: re3,
+                                //   count: re4,
+                                //   ADRs: re5
+                                // }
                                 data: {
                                   name: that.result.re[0],
                                   component: that.result.re[3],
@@ -65,6 +77,7 @@ Page({
                           }
                         }
                       )
+                      console.log(res.result.re[4]);
                       wx.navigateTo({
                         url: '../detail/detail?name=' + res.result.re[0] +
                           '&component=' + res.result.re[3] +

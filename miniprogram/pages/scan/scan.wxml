@@ -1,9 +1,11 @@
 <!--pages/scan/scan.wxml-->
 <!-- <text bindtap="scan">pages/scan/scan.wxml</text> -->
 <view style="height:100%">
-	<van-button color="#d81e06" plain style="width: 100%; height: 100%; display: flex; align-items:center" size="large" icon="search" bindtap="scan">扫一扫</van-button>
-	<!-- <van-button type="default" style="width: 100%; height: 100%; display: flex; align-items:center;">默认按钮</van-button> -->
-	<van-dialog id="van-dialog" />
+	<view style="width: 100%; height: 100%; display: flex; align-items:center">
+		<van-button color="#4198b9" plain style="margin:auto auto" size="large" icon="" bindtap="scan" round>扫一扫</van-button>
+		<!-- <van-button type="default" style="width: 100%; height: 100%; display: flex; align-items:center;">默认按钮</van-button> -->
+		<van-dialog id="van-dialog" />
+	</view>
 </view>
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh">

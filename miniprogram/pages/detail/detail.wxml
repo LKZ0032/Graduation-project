@@ -3,15 +3,21 @@
 <view>
 	<!-- // 引入模板 -->
 	<!-- <import src="../../wxParse/wxParse.wxml" /> -->
+	<van-panel title="{{name}}" desc="{{count}}" use-footer-slot>
+		<view>{{effect}}</view>
+		<view slot="footer">
+			<van-button size="small" bindtap="playVoice">▶ 播放文字内容</van-button>
+		</view>
+	</van-panel>
 	<!-- //这里data中article为bindName -->
-	<!-- <template is="wxParse" data="{{wxParseData:naem.nodes}}" />
-  <template is="wxParse" data="{{wxParseData:component.nodes}}" />
-  <template is="wxParse" data="{{wxParseData:effect.nodes}}" />
-  <template is="wxParse" data="{{wxParseData:count.nodes}}" />
-  <template is="wxParse" data="{{wxParseData:ADRs.nodes}}" /> -->
-  {{name}}
+	<!-- <template is="wxParse" data="{{wxParseData:name.nodes}}" />
+	<template is="wxParse" data="{{wxParseData:component.nodes}}" />
+	<template is="wxParse" data="{{wxParseData:effect.nodes}}" />
+	<template is="wxParse" data="{{wxParseData:count.nodes}}" />
+	<template is="wxParse" data="{{wxParseData:ADRs.nodes}}" /> -->
+	<!-- {{name}}
   {{component}}
   {{effect}}
   {{count}}
-  {{ADRs}}
+  {{ADRs}} -->
 </view>

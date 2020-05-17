@@ -7,15 +7,14 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#d81e06",
-    "navigationBarTitleText": "扫药",
+    "navigationBarBackgroundColor": "#4198b9",
+    "navigationBarTitleText": "闪药",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#2c2c2c",
-    "selectedColor": "#d81e06",
-    "list": [
-      {
+    "selectedColor": "#4198b9",
+    "list": [{
         "pagePath": "pages/scan/scan",
         "text": "扫描",
         "iconPath": "images/search.png",
@@ -30,5 +29,11 @@
     ]
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+        }
+  }
 }
