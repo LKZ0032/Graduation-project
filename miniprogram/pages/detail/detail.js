@@ -50,7 +50,7 @@ Page({
       count: options.count,
       ADRs: options.ADRs
     })
-    console.log(options.effect);
+    // console.log(options.effect);
     // var name = this.data.name;
     // var component = this.data.component;
     // var effect = this.data.effect;

@@ -10,6 +10,11 @@ Page({
 
   },
   scan: function (options) {
+    // db.collection('user').where({
+    //   name: db.command.eq(name)
+    // }).get().then(
+    //   res => {
+    //     if (res.data.length == 0) {}})
     wx.scanCode({
       success: (res) => {
         console.log('saomiaowanc')
@@ -24,12 +29,13 @@ Page({
                 webhtm: res.data
               },
             }).then(res => {
-              // console.log(res.result.re[0]);
-              if (res.result.length == 0) {
+              // console.log(res.result);
+              if (res.result.re == null) {
                 Dialog.alert({
                   message: '没有当前药品信息'
                 })
               } else {
+                // console.log(res.result);
                 wx.request({
                   url: 'https://www.315jiage.cn/' + res.result.re[0],
                   success: (res) => {
@@ -43,9 +49,26 @@ Page({
                         // console.log(res.result.re[0]);
                       // }
                       // console.log(res);
-                      var that=res;
+                      var name = res.result.re[0].substring(
+                        res.result.re[0].indexOf("【"),res.result.re[0].indexOf("/")-1)
+                      var component = res.result.re[3].substring(
+                        res.result.re[3].indexOf("【"),res.result.re[3].indexOf("/")-1)
+                      var effect = res.result.re[4].substring(
+                        res.result.re[4].indexOf("【"),res.result.re[4].indexOf("】")+1)
+                        +res.result.re[4].substring(
+                        res.result.re[4].indexOf("】")+27,res.result.re[4].lastIndexOf("/")-6)
+                      var count = res.result.re[5].substring(
+                        res.result.re[5].indexOf("【"),res.result.re[5].indexOf("/")-1)
+                      var ADRs = res.result.re[6].substring(
+                        res.result.re[6].indexOf("【"),res.result.re[6].indexOf("/")-1)
+                      // console.log();
+                      // console.log();
+                      // console.log();
+                      // console.log();
+                      // console.log();
+                      // var that=res;
                       db.collection('medicine').where({
-                        name: db.command.eq(res.result.re[0])
+                        name: db.command.eq(name)
                       }).get().then(
                         res => {
                           // var re1=that.result.re[0].replace(/([^\x00-\xff]+)[^<]+/g,'');
@@ -64,26 +87,27 @@ Page({
                                 //   ADRs: re5
                                 // }
                                 data: {
-                                  name: that.result.re[0],
-                                  component: that.result.re[3],
-                                  effect: that.result.re[4],
-                                  count: that.result.re[5],
-                                  ADRs: that.result.re[6]
+                                  name: name,
+                                  component: component,
+                                  effect: effect,
+                                  count: count,
+                                  ADRs: ADRs
                                 }
                               })
                               .then(res => {
+
                                 console.log(res)
                               })
                           }
                         }
                       )
-                      console.log(res.result.re[4]);
+                      // console.log(res.result.re[4]);
                       wx.navigateTo({
-                        url: '../detail/detail?name=' + res.result.re[0] +
-                          '&component=' + res.result.re[3] +
-                          '&effect=' + res.result.re[4] +
-                          '&count=' + res.result.re[5] +
-                          '&ADRs=' + res.result.re[6],
+                        url: '../detail/detail?name=' + name
+                          // '&component=' + res.result.re[3] +
+                          // '&effect=' + res.result.re[4] +
+                          // '&count=' + res.result.re[5] +
+                          // '&ADRs=' + res.result.re[6],
                       })
                     })
                   }
