@@ -2,12 +2,13 @@
 <!-- <text bindtap="scan">pages/scan/scan.wxml</text> -->
 <view style="height:100%">
 	<view style="width: 100%; height: 95%; display: flex; align-items:center">
-		<van-button color="#4198b9" plain style="margin:auto auto" size="large" icon="" bindtap="scan" round>扫一扫</van-button>
+		<van-button color="#4198b9" plain style="margin:auto auto" size="large" icon="" open-type="getUserInfo" bindgetuserinfo="scan" round>扫一扫</van-button>
 		<!-- <van-button type="default" style="width: 100%; height: 100%; display: flex; align-items:center;">默认按钮</van-button> -->
 	</view>
 	<view style="font-size: 50%;color: #cdcdcd;text-align: center">—信息来源自：https://www.315jiage.cn—</view>
 </view>
 <van-dialog id="van-dialog" />
+<van-toast id="van-toast" />
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
 

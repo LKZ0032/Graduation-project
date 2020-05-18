@@ -1,4 +1,5 @@
 // pages/detail/detail.js
+import Toast from '@vant/weapp/toast/toast';
 var WxParse = require('../../wxParse/wxParse')
 const db = wx.cloud.database();
 Page({
@@ -20,12 +21,18 @@ Page({
       tts: true,
       content: this.data.name + " " + this.data.count + " " + this.data.effect,
       success: function (res) {
-        console.log("succ tts", res.filename)
+        Toast.loading({
+          duration: 1000,
+          loadingType: 'spinner',
+          mask: true,
+          message: '处理中...'
+        });
+        // console.log("succ tts", res.filename)
         const innerAudioContext = wx.createInnerAudioContext()
         innerAudioContext.autoplay = true
         innerAudioContext.src = res.filename
           innerAudioContext.onPlay(() => {
-            console.log('开始播放')
+            // console.log('开始播放')
           })
         innerAudioContext.onError((res) => {
           console.log(res.errMsg)

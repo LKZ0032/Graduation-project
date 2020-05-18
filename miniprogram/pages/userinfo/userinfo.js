@@ -1,11 +1,23 @@
 // pages/userinfo/userinfo.js
+const db = wx.cloud.database();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imagsrc: '../../images/tou.png',
+    name: '我',
+    haveinfo: false,
+    user_open_id: '',
+    username: '分析师(空)',
+    industry: '行业(空)',
+    organ: '机构(空)',
+    message: '备注(空)',
+    currentDate: '时间(空)',
+    islogin: false,
+    checked: false,
+    disabled: false
   },
 
   /**
@@ -26,7 +38,36 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    var _this = this;
+    wx.getUserInfo({
+      complete: (res) => {},
+      success: (res) => {
+        var url = res.userInfo.avatarUrl;
+        wx.cloud.callFunction({
+          name: 'login',
+        }).then(res => {
+          // console.log(res)
+          this.setData({
+            imagsrc: url,
+            user_open_id: res.result.openid,
+            islogin: true
+          })
+          db.collection('medicine').where({
+            _openid: this.data.user_open_id,
+          }).get().then(
+            res => {
+              console.log(res)
+            }
+          )
 
+        });
+      },
+      fail: (res) => {
+        this.setData({
+          islogin: false
+        })
+      }
+    })
   },
 
   /**

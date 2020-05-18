@@ -9,6 +9,7 @@
 			<van-button size="small" bindtap="playVoice">▶ 播放文字内容</van-button>
 		</view>
 	</van-panel>
+	<van-toast id="van-toast" />
 	<!-- //这里data中article为bindName -->
 	<!-- <template is="wxParse" data="{{wxParseData:name.nodes}}" />
 	<template is="wxParse" data="{{wxParseData:component.nodes}}" />

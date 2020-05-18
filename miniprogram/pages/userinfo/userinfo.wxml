@@ -1,2 +1,22 @@
 <!--pages/userinfo/userinfo.wxml-->
-<text>pages/userinfo/userinfo.wxml</text>
+<view style="display:flex;justify-content: center;">
+	<image src="{{imagsrc}}" style="width:200rpx;height:200rpx;margin-top:53rpx;border-radius: 50%;"></image>
+</view>
+
+<view style="margin:160rpx 10rpx 0 10rpx">
+	<van-cell-group>
+		<van-cell title="{{username}}" value="{{industry}}" />
+		<van-cell title="{{currentDate}}" value="{{organ}}" label="{{message}}" border="{{ false }}" />
+	</van-cell-group>
+	<van-cell bindtap="checklogin" title="查看更多" is-link />
+	<van-toast id="van-toast" />
+</view>
+<view style="margin:80rpx auto 50rpx auto">
+	<van-button wx:if="{{islogin}}" bindtap="ontapaddrs" round type="info">添加路演</van-button>
+	<van-button wx:else open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" round type="info">点击登录</van-button>
+</view>
+<!-- <van-button type="default" bindtap="fork">默认按钮</van-button> -->
+<!-- 一个tap事件，用来获取用户允许下发的权限，根据wx.getSetting(Object object)(通过设置函数的参数withSubscriptions为true，来使得函数可以返回订阅消息状态)在云函数中判断是否可以下发 -->
+<!-- <view style="margin:0 auto">
+	<van-button bindtap="ontapaddrs" round plain type="info">注销</van-button>
+</view> -->
