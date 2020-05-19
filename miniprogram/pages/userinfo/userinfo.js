@@ -1,5 +1,6 @@
 // pages/userinfo/userinfo.js
 const db = wx.cloud.database();
+// import Dialog from '@vant/weapp/dialog/dialog';
 Page({
 
   /**
@@ -7,17 +8,49 @@ Page({
    */
   data: {
     imagsrc: '../../images/tou.png',
-    name: '我',
-    haveinfo: false,
     user_open_id: '',
-    username: '分析师(空)',
-    industry: '行业(空)',
-    organ: '机构(空)',
-    message: '备注(空)',
-    currentDate: '时间(空)',
     islogin: false,
-    checked: false,
-    disabled: false
+    // name: '我',
+    // haveinfo: false,
+    // username: '分析师(空)',
+    // industry: '行业(空)',
+    // organ: '机构(空)',
+    // message: '备注(空)',
+    // currentDate: '时间(空)',
+    // checked: false,
+    // disabled: false
+  },
+  showScanned:function(e){
+    db.collection('medicine').where({
+      _openid: db.command.eq(this.data.user_open_id)
+    }).get().then(
+      res => {
+        if (res.data.length == 0) {
+          Toast.fail('您还没有扫描过');
+        }else{
+          wx.navigateTo({
+            url: '../scanned/scanned?openid='+this.data.user_open_id
+          })
+        }
+      })
+  },
+  onGotUserInfo: function (e) {
+    wx.getUserInfo({
+      complete: (res) => {},
+      success: (res) => {
+        var url = res.userInfo.avatarUrl;
+        wx.cloud.callFunction({
+          name: 'login',
+        }).then(res => {
+          // console.log(res)
+          this.setData({
+            imagsrc: url,
+            user_open_id: res.result.openid,
+            islogin: true
+          })
+        })
+      }
+    })
   },
 
   /**
@@ -52,13 +85,13 @@ Page({
             user_open_id: res.result.openid,
             islogin: true
           })
-          db.collection('medicine').where({
-            _openid: this.data.user_open_id,
-          }).get().then(
-            res => {
-              console.log(res)
-            }
-          )
+          // db.collection('medicine').where({
+          //   _openid: this.data.user_open_id,
+          // }).get().then(
+          //   res => {
+          //     // console.log(res)
+          //   }
+          // )
 
         });
       },

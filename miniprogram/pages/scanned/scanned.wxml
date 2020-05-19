@@ -1,0 +1,17 @@
+<!--miniprogram/pages/scanned.wxml-->
+<view style="height:100%">
+	<van-tabs active="{{ active }}" bind:change="onChange" color="#4198b9">
+		<block wx:for="{{list}}" wx:key="item">
+			<van-tab title="记录{{index+1}}">
+				<view style="margin:0 15rpx 90rpx 20rpx ">
+					<text >
+					{{list[index].name}}\n\n{{list[index].component}}\n\n{{list[index].count}}\n\n{{list[index].effect}}\n\n{{list[index].ADRs}}
+					</text>
+				</view>
+			</van-tab>
+			<view style="text-align:center;margin:auto auto">
+				<van-button plain type="info" round>在地图搜索</van-button>
+			</view>
+		</block>
+	</van-tabs>
+</view>
