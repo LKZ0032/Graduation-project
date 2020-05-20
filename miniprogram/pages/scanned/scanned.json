@@ -2,6 +2,8 @@
   "usingComponents": {
     "van-tab": "@vant/weapp/tab",
     "van-tabs": "@vant/weapp/tabs",
-    "van-button": "@vant/weapp/button"
+    "van-button": "@vant/weapp/button",
+    "van-dialog": "@vant/weapp/dialog",
+    "van-toast": "@vant/weapp/toast"
   }
 }

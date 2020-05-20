@@ -77,6 +77,13 @@
 					"id": -1,
 					"name": "pages/scanned/scanned",
 					"pathName": "pages/scanned/scanned",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/map/map",
+					"pathName": "pages/map/map",
 					"scene": null
 				}
 			]

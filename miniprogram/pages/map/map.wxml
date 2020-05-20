@@ -1,0 +1,8 @@
+<!--miniprogram/pages/map/map.wxml-->
+<van-cell-group>
+	<van-field value="{{ value }}" center clearable label="重新定位" placeholder="请输入新地址" border="{{ false }}" use-button-slot bind:change="onChange">
+		<van-button slot="button" size="small" type="primary" bindtap="searchNew">确定</van-button>
+	</van-field>
+</van-cell-group>
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" show-location="true" scale="14" markers="{{markers}}" style="width: 100%; height: 896px;">
+</map>

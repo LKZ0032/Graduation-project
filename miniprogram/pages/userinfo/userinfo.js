@@ -1,5 +1,6 @@
 // pages/userinfo/userinfo.js
 const db = wx.cloud.database();
+import Toast from '@vant/weapp/toast/toast';
 // import Dialog from '@vant/weapp/dialog/dialog';
 Page({
 
@@ -20,16 +21,20 @@ Page({
     // checked: false,
     // disabled: false
   },
-  showScanned:function(e){
+  handleContact(e) {
+    console.log(e.detail.path)
+    console.log(e.detail.query)
+  },
+  showScanned: function (e) {
     db.collection('medicine').where({
       _openid: db.command.eq(this.data.user_open_id)
     }).get().then(
       res => {
         if (res.data.length == 0) {
           Toast.fail('您还没有扫描过');
-        }else{
+        } else {
           wx.navigateTo({
-            url: '../scanned/scanned?openid='+this.data.user_open_id
+            url: '../scanned/scanned?openid=' + this.data.user_open_id
           })
         }
       })
@@ -57,7 +62,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    Toast.loading({
+      mask: true,
+      loadingType: 'spinner',
+      message: '加载中...',
+    });
   },
 
   /**
@@ -71,6 +80,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
     var _this = this;
     wx.getUserInfo({
       complete: (res) => {},

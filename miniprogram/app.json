@@ -3,7 +3,9 @@
     "pages/scan/scan",
     "pages/userinfo/userinfo",
     "pages/detail/detail",
+    "pages/map/map",
     "pages/scanned/scanned"
+    
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -36,6 +38,15 @@
     "WechatSI": {
       "version": "0.3.4",
       "provider": "wx069ba97219f66d99"
+    },
+    "chooseLocation": {
+      "version": "1.0.3",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
     }
   }
 }

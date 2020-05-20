@@ -1,4 +1,6 @@
 // miniprogram/pages/scanned.js
+import Dialog from '@vant/weapp/dialog/dialog';
+import Toast from '@vant/weapp/toast/toast';
 const db = wx.cloud.database();
 Page({
 
@@ -7,24 +9,55 @@ Page({
    */
   data: {
     active: 0,
-    list:[]
+    list: []
   },
 
-  onChange(event) {
-    wx.showToast({
-      title: `切换到标签 ${event.detail.name}`,
-      icon: 'none',
-    });
+  naTo: function (e) {
+    wx.getLocation({
+      type: 'wgs84',
+      success(res) {
+        Toast.success('位置已授权');
+        const latitude = res.latitude
+        const longitude = res.longitude
+        const speed = res.speed
+        const accuracy = res.accuracy
+        wx.navigateTo({
+          url: '../map/map?latitude=' + latitude +
+            '&longitude=' + longitude,
+        })
+        // console.log(latitude, longitude, speed, accuracy)
+      },
+      fail(res) {
+        Dialog.alert({
+          message: '此功能需要在设置中打开位置授权',
+        }).then(() => {
+          // on close
+        });
+        console.log(res)
+      }
+    })
   },
+
+  // onChange(event) {
+  //   wx.showToast({
+  //     title: `切换到标签 ${event.detail.name}`,
+  //     icon: 'none',
+  //   });
+  // },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    Toast.loading({
+      loadingType	:'spinner',
+      mask: true,
+      message: '加载中...',
+    });
     db.collection('medicine').where({
       // _openid: "oZmy25FUaRFlCNB53K5xhd6yZD-A"
       _openid: options.openid
     }).get().then(
-      res=>{
+      res => {
         // console.log(res.data)
         this.setData({
           list: res.data

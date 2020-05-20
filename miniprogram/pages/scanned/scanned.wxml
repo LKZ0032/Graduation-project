@@ -9,9 +9,12 @@
 					</text>
 				</view>
 			</van-tab>
-			<view style="text-align:center;margin:auto auto">
-				<van-button plain type="info" round>在地图搜索</van-button>
-			</view>
 		</block>
 	</van-tabs>
+	<view style="text-align:center;margin:auto auto">
+		<van-button plain open-type="openSetting" type="info" round color="#4198b9" bindopensetting="naTo">在地图搜索</van-button>
+		<!-- ZMVBZ-RALWK-3WQJX-A465N-JQKI6-XNFX7 -->
+	</view>
+	<van-dialog id="van-dialog" />
+	<van-toast id="van-toast" />
 </view>
