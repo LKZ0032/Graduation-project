@@ -11,15 +11,17 @@ Page({
     imagsrc: '../../images/tou.png',
     user_open_id: '',
     islogin: false,
-    // name: '我',
-    // haveinfo: false,
-    // username: '分析师(空)',
-    // industry: '行业(空)',
-    // organ: '机构(空)',
-    // message: '备注(空)',
-    // currentDate: '时间(空)',
-    // checked: false,
-    // disabled: false
+  },
+  showQrcode:function(){
+    wx.navigateTo({
+      url: '../qrcode/qrcode'
+      
+    })
+  },
+  improvInfo:function(){
+    wx.navigateTo({
+      url: '../impinfo/impinfo'
+    })
   },
   handleContact(e) {
     console.log(e.detail.path)
@@ -40,6 +42,7 @@ Page({
       })
   },
   onGotUserInfo: function (e) {
+    
     wx.getUserInfo({
       complete: (res) => {},
       success: (res) => {
@@ -48,6 +51,25 @@ Page({
           name: 'login',
         }).then(res => {
           // console.log(res)
+          db.collection('medicine').where({
+            _openid: db.command.eq(res.result.openid)
+          }).get().then(
+            res => {
+              if (res.data.length == 0) {
+                db.collection('user').add({
+                    // data 字段表示需新增的 JSON 数据
+                    data: {
+                      name: '',
+                      age: 0,
+                      sex: 0
+                    }
+                  })
+                  .then(res => {
+                    console.log(res)
+                  })
+              }
+  
+            })
           this.setData({
             imagsrc: url,
             user_open_id: res.result.openid,

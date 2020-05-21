@@ -33,7 +33,7 @@ Page({
         }).then(() => {
           // on close
         });
-        console.log(res)
+        // console.log(res)
       }
     })
   },

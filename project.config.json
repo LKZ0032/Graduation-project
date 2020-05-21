@@ -84,6 +84,20 @@
 					"id": -1,
 					"name": "pages/map/map",
 					"pathName": "pages/map/map",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/impinfo/impinfo",
+					"pathName": "pages/impinfo/impinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/qrcode/qrcode",
+					"pathName": "pages/qrcode/qrcode",
 					"scene": null
 				}
 			]

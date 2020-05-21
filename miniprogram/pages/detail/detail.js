@@ -2,6 +2,8 @@
 import Toast from '@vant/weapp/toast/toast';
 var WxParse = require('../../wxParse/wxParse')
 const db = wx.cloud.database();
+// let innerAudioContext = null;
+const innerAudioContext=wx.createInnerAudioContext()
 Page({
 
   /**
@@ -12,9 +14,18 @@ Page({
     component: '',
     effect: '',
     count: '',
-    ADRs: ''
+    ADRs: '',
+    src: '',
+    // isStop: false
+    // innerAudioContext:wx.createInnerAudioContext()
+  },
+  stopVoice: function () {
+    // innerAudioContext.src = this.data.src
+    innerAudioContext.pause()
+    // console.log()
   },
   playVoice: function () {
+    var _this = this;
     var plugin = requirePlugin("WechatSI");
     plugin.textToSpeech({
       lang: "zh_CN",
@@ -28,19 +39,34 @@ Page({
           message: '处理中...'
         });
         // console.log("succ tts", res.filename)
-        const innerAudioContext = wx.createInnerAudioContext()
-        innerAudioContext.autoplay = true
+        // const innerAudioContext = wx.createInnerAudioContext()
+        // innerAudioContext.autoplay = true
         innerAudioContext.src = res.filename
-          innerAudioContext.onPlay(() => {
-            // console.log('开始播放')
-          })
+        // _this.setData({
+        //   innerAudioContext: _this.data.innerAudioContext
+        // })
+        // _this.data.innerAudioContext.play();
+        // _this.setData({
+        //   innerAudioContext: innerAudioContext
+        // })
+        // if(_this.data.isStop){
+        //   innerAudioContext.onPlay();
+        // }
+        innerAudioContext.play();
+        // innerAudioContext.onPlay(() => {
+        //   console.log('开始播放')
+        // })
+        // innerAudioContext.onPause(() => { //监听暂停事件
+        // })
         innerAudioContext.onError((res) => {
-          console.log(res.errMsg)
-          console.log(res.errCode)
+          Toast.fail('出错了，请重试');
+          // console.log(res.errMsg)
+          // console.log(res.errCode)
         })
       },
       fail: function (res) {
-        console.log("fail tts", res)
+        Toast.fail('出错了，请重试');
+        // console.log("fail tts", res)
       }
     })
 
@@ -50,6 +76,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // innerAudioContext = wx.createInnerAudioContext();
+
+    //以下监听事件只需要注册一次就行
+    // this.data.innerAudioContext.onPlay(()=>{//监听播放事件
+    // })
+    // this.data.innerAudioContext.onStop(()=>{//监听停止事件
+    // })
+    // this.data.innerAudioContext.onPause(()=>{//监听暂停事件
+    // })
     this.setData({
       name: options.name,
       component: options.component,
@@ -96,7 +131,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    innerAudioContext.destroy();
   },
 
   /**

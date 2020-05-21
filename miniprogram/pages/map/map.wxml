@@ -6,3 +6,4 @@
 </van-cell-group>
 <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" show-location="true" scale="14" markers="{{markers}}" style="width: 100%; height: 896px;">
 </map>
+<van-toast id="van-toast" />

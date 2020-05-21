@@ -1,0 +1,19 @@
+<!--miniprogram/pages/impinfo/impinfo.wxml-->
+<!-- <text>miniprogram/pages/impinfo/impinfo.wxml</text> -->
+<view style="margin:20rpx 10rpx auto 10rpx">
+  <van-cell-group>
+	<van-field value="{{ name }}" clearable label="姓名" placeholder="请输入姓名" bind:change="onChangeName" />
+	<van-field value="{{ age }}" disabled clearable label="年龄" placeholder="请选择年龄"/>
+  <view style="margin:30rpx 30rpx 30rpx 30rpx">
+    <van-slider max="150" min="0" value="{{ age }}" bind:drag="onChangeAge" />
+  </view>
+	<van-field disabled clearable label="性别" placeholder="{{sex_ch}}" />
+  <view style="margin:30rpx 50rpx 30rpx 200rpx">
+    <van-slider value="{{ sex }}" max="1" min="-1" step="1" bind:change="onChangeSex" />
+  </view>
+</van-cell-group>
+</view>
+<view style="margin:auto auto 40% auto">
+  <van-button color="#4198b9" lang="zh_CN" bindtap="addInfo" round type="info">保存</van-button>
+</view>
+<van-toast id="van-toast" />

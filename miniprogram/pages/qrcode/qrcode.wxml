@@ -1,0 +1,4 @@
+<!--miniprogram/pages/qrcode/qrcode.wxml-->
+<view style="margin:auto auto auto auto">
+  <image style="width: 200px; height: 200px;" mode="aspectFit" src="{{src}}"></image>
+</view>

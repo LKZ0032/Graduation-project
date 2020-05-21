@@ -3,10 +3,15 @@
 <view>
 	<!-- // 引入模板 -->
 	<!-- <import src="../../wxParse/wxParse.wxml" /> -->
-	<van-panel title="{{name}}" desc="{{count}}" use-footer-slot>
-		<view>{{effect}}</view>
+	<van-panel title="{{name}}" use-footer-slot>
+		<view>
+		<text>
+				{{count}}\n{{effect}}
+		</text>
+		</view>
 		<view slot="footer">
-			<van-button size="small" bindtap="playVoice">▶ 播放文字内容</van-button>
+			<van-button size="small" bindtap="playVoice" color="#4198b9">播放</van-button>
+			<van-button size="small" bindtap="stopVoice">暂停</van-button>
 		</view>
 	</van-panel>
 	<van-toast id="van-toast" />

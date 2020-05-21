@@ -6,6 +6,7 @@
 //   longitude: 116.323459711
 // });
 // const category = '生活服务,娱乐休闲';
+import Toast from '@vant/weapp/toast/toast';
 
 // 引入SDK核心类
 var QQMapWX = require('../../qqmap-wx-jssdk.js');
@@ -13,6 +14,7 @@ var QQMapWX = require('../../qqmap-wx-jssdk.js');
 var qqmapsdk = new QQMapWX({
   key: 'ZMVBZ-RALWK-3WQJX-A465N-JQKI6-XNFX7' // 必填
 });
+
 Page({
 
   /**
@@ -34,7 +36,7 @@ Page({
     }]
   },
   searchNew: function (e) {
-    console.log(this.data.value)
+    // console.log(this.data.value)
     var _this = this;
     // 调用接口
     qqmapsdk.search({
@@ -56,19 +58,27 @@ Page({
         //     height: 20
         //   })
         // }
-        _this.setData({ //设置markers属性，将搜索结果显示在地图中
-          latitude: res.data[0].location.lat,
-          longitude: res.data[0].location.lng,
-        })
-        console.log(_this.data.latitude,_this.data.longitude)
-        _this.onShow();
+        // console.log(res.data[0])
+        if(res.data[0] != undefined){
+          _this.setData({ //设置markers属性，将搜索结果显示在地图中
+            latitude: res.data[0].location.lat,
+            longitude: res.data[0].location.lng,
+          })
+          // console.log(_this.data.latitude,_this.data.longitude)
+          _this.onShow();
+        }else{
+          Toast.fail('请输入正确的地名');
+          
+        }
+        
         
       },
       fail: function (res) {
-        console.log(res);
+        // console.log(res);
+        Toast.fail('出错了，请重试');
       },
       complete: function (res) {
-        console.log(res);
+        // console.log(res);
       }
     });
   },
@@ -84,7 +94,7 @@ Page({
    */
   onLoad: function (options) {
     // wx.authorize({scope: "scope.userInfo"})
-    console.log(options.longitude)
+    // console.log(options.longitude)
     this.setData({
       longitude: parseFloat(options.longitude),
       latitude: parseFloat(options.latitude),
@@ -107,7 +117,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(this.data.longitude,this.data.latitude)
+    // console.log(this.data.longitude,this.data.latitude)
     var _this = this;
     // 调用接口
     qqmapsdk.search({

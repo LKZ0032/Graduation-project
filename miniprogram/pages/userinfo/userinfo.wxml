@@ -11,7 +11,9 @@
 		<van-cell title="{{username}}" value="{{industry}}" />
 		<van-cell title="{{currentDate}}" value="{{organ}}" label="{{message}}" border="{{ false }}" />
 	</van-cell-group> -->
+	<van-cell bindtap="improvInfo" title="完善个人档案" is-link />
 	<van-cell bindtap="showScanned" title="历史记录" is-link />
+	<van-cell bindtap="showQrcode" title="二维码形式展出" is-link />
 	<van-cell open-type="contact" bindcontact="handleContact" title="联系我们" is-link />
 </view>
 	<van-toast id="van-toast" />

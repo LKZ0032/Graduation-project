@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "van-panel": "@vant/weapp/panel",
-    "van-toast": "@vant/weapp/toast"
+    "van-toast": "@vant/weapp/toast",
+    "van-button": "@vant/weapp/button"
   }
 }
