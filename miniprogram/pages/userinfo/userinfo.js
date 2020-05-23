@@ -28,18 +28,34 @@ Page({
     console.log(e.detail.query)
   },
   showScanned: function (e) {
-    db.collection('medicine').where({
-      _openid: db.command.eq(this.data.user_open_id)
-    }).get().then(
-      res => {
-        if (res.data.length == 0) {
+    wx.request({
+      url: 'http://bishe.cn/index/checkscanned/checkscanned', //服务器获取token的api   
+      method: 'POST',
+      data: {
+        user_id:wx.getStorageSync('openid')
+      },
+      success: function (res) {
+        if(res.data=="false"){
           Toast.fail('您还没有扫描过');
-        } else {
+        }else{
           wx.navigateTo({
-            url: '../scanned/scanned?openid=' + this.data.user_open_id
-          })
+            url: '../scanned/scanned'//?openid=' + res.data
+         })
         }
-      })
+      }
+    })
+    // db.collection('medicine').where({
+    //   _openid: db.command.eq(this.data.user_open_id)
+    // }).get().then(
+    //   res => {
+    //     if (res.data.length == 0) {
+    //       Toast.fail('您还没有扫描过');
+    //     } else {
+    //       wx.navigateTo({
+    //         url: '../scanned/scanned?openid=' + this.data.user_open_id
+    //       })
+    //     }
+    //   })
   },
   onGotUserInfo: function (e) {
     

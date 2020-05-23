@@ -72,38 +72,74 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    db.collection('user').where({
-      _openid: db.command.eq(this.data.user_open_id)
-    }).get().then(
-      res => {
-        // console.log(res.data[0]._id)
-        if (res.data[0].sex == 1) {
-          this.setData({
-            recordId:res.data[0]._id,
-            name: res.data[0].name,
-            age: res.data[0].age,
+    var _this=this
+    wx.request({
+      url: 'http://bishe.cn/index/getuserinfo/getuserinfo', //服务器获取token的api   
+      method: 'POST',
+      data: {
+        user_id:wx.getStorageSync('openid')
+      },
+      success: function (res) {
+        console.log(res);
+        if (res.data.sex == 1) {
+          _this.setData({
+            recordId:res.data._id,
+            name: res.data.name,
+            age: res.data.age,
             sex_ch: '女',
-            sex: res.data[0].sex
+            sex: res.data.sex
           })
-        } else if (res.data[0].sex == -1) {
-          this.setData({
-            recordId:res.data[0]._id,
-            name: res.data[0].name,
-            age: res.data[0].age,
+        } else if (res.data.sex == -1) {
+          _this.setData({
+            recordId:res.data._id,
+            name: res.data.name,
+            age: res.data.age,
             sex_ch: '男',
-            sex: res.data[0].sex
+            sex: res.data.sex
           })
         }else{
-          this.setData({
-            recordId:res.data[0]._id,
-            name: res.data[0].name,
-            age: res.data[0].age,
+          _this.setData({
+            recordId:res.data._id,
+            name: res.data.name,
+            age: res.data.age,
             sex_ch: '请滑动选择性别',
-            sex: res.data[0].sex
+            sex: res.data.sex
           })
         }
       }
-    )
+    })
+    // db.collection('user').where({
+    //   _openid: db.command.eq(this.data.user_open_id)
+    // }).get().then(
+    //   res => {
+    //     // console.log(res.data[0]._id)
+    //     if (res.data[0].sex == 1) {
+    //       this.setData({
+    //         recordId:res.data[0]._id,
+    //         name: res.data[0].name,
+    //         age: res.data[0].age,
+    //         sex_ch: '女',
+    //         sex: res.data[0].sex
+    //       })
+    //     } else if (res.data[0].sex == -1) {
+    //       this.setData({
+    //         recordId:res.data[0]._id,
+    //         name: res.data[0].name,
+    //         age: res.data[0].age,
+    //         sex_ch: '男',
+    //         sex: res.data[0].sex
+    //       })
+    //     }else{
+    //       this.setData({
+    //         recordId:res.data[0]._id,
+    //         name: res.data[0].name,
+    //         age: res.data[0].age,
+    //         sex_ch: '请滑动选择性别',
+    //         sex: res.data[0].sex
+    //       })
+    //     }
+    //   }
+    // )
   },
 
   /**

@@ -48,22 +48,36 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var _this=this
     Toast.loading({
       loadingType	:'spinner',
       mask: true,
       message: '加载中...',
     });
-    db.collection('medicine').where({
-      // _openid: "oZmy25FUaRFlCNB53K5xhd6yZD-A"
-      _openid: options.openid
-    }).get().then(
-      res => {
-        // console.log(res.data)
-        this.setData({
+    wx.request({
+      url: 'http://bishe.cn/index/getscanned/getscanned', //服务器获取token的api   
+      method: 'POST',
+      data: {
+        user_id:wx.getStorageSync('openid')
+      },
+      success: function (res) {
+        // console.log(res);
+        _this.setData({
           list: res.data
         })
       }
-    )
+    })
+    // db.collection('medicine').where({
+    //   // _openid: "oZmy25FUaRFlCNB53K5xhd6yZD-A"
+    //   _openid: options.openid
+    // }).get().then(
+    //   res => {
+    //     console.log(res.data)
+    //     this.setData({
+    //       list: res.data
+    //     })
+    //   }
+    // )
   },
 
   /**

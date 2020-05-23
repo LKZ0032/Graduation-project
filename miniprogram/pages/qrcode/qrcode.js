@@ -27,54 +27,69 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var text1 = ""
-    var text2= ""
-    wx.cloud.callFunction({
-      name: 'login',
-    }).then(res => {
-      var re=res
-      // console.log(res)
-      db.collection('medicine').where({
-        _openid: db.command.eq(res.result.openid)
-      }).get().then(
-        res => {
-          res.data.forEach(element => {
-            text1 = text1+element.name
-            text1=text1+"@"
-            text1 = text1+element.effect
-            text1=text1+"@"
-            text1 = text1+element.count
-            text1=text1+"@"
-            text1 = text1+element.component
-            text1=text1+"@"
-            text1 = text1+element.ADRs
-            text1=text1+"*"
-            // console.log(text1)
-          });
-          // text1 = res.data.toString()
-          // console.log(text1)
-          db.collection('user').where({
-            _openid: db.command.eq(re.result.openid)
-          }).get().then(
-            res => {
-              // console.log(text1)
-              text2 = text1+"%"
-              text2 = text2+res.data[0].sex
-              text2=text2+"@"
-              text2 = text2+res.data[0].name
-              text2=text2+"@"
-              text2 = text2+res.data[0].age
-              text2=text2+"@"
-              text2 = text2+res.data[0]._openid
-              text2=this.data.src+text2
-              // console.log(text2)
-              this.setData({
-                src:text2
-              })
-            })
+    var _this=this
+    wx.request({
+      url: 'http://bishe.cn/index/getqrcode/getqrcode', //服务器获取token的api   
+      method: 'POST',
+      data: {
+        // med_id:res.data,
+        user_id:wx.getStorageSync('openid')
+      },
+      success: function (res) {
+        console.log(res);
+        var text=_this.data.src+res.data
+        // console.log(text2)
+        _this.setData({
+          src:text
         })
-        
+      }
     })
+    // wx.cloud.callFunction({
+    //   name: 'login',
+    // }).then(res => {
+    //   var re=res
+      // console.log(res)
+      // db.collection('medicine').where({
+      //   _openid: db.command.eq(res.result.openid)
+      // }).get().then(
+      //   res => {
+      //     res.data.forEach(element => {
+      //       text1 = text1+element.name
+      //       text1=text1+"@"
+      //       text1 = text1+element.effect
+      //       text1=text1+"@"
+      //       text1 = text1+element.count
+      //       text1=text1+"@"
+      //       text1 = text1+element.component
+      //       text1=text1+"@"
+      //       text1 = text1+element.ADRs
+      //       text1=text1+"*"
+      //       // console.log(text1)
+      //     });
+      //     // text1 = res.data.toString()
+      //     // console.log(text1)
+      //     db.collection('user').where({
+      //       _openid: db.command.eq(re.result.openid)
+      //     }).get().then(
+      //       res => {
+      //         // console.log(text1)
+      //         text2 = text1+"%"
+      //         text2 = text2+res.data[0].sex
+      //         text2=text2+"@"
+      //         text2 = text2+res.data[0].name
+      //         text2=text2+"@"
+      //         text2 = text2+res.data[0].age
+      //         text2=text2+"@"
+      //         text2 = text2+res.data[0]._openid
+      //         text2=this.data.src+text2
+      //         // console.log(text2)
+      //         this.setData({
+      //           src:text2
+      //         })
+      //       })
+      //   })
+        
+    // })
   },
 
   /**
