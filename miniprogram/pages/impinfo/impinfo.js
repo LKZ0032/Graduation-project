@@ -14,27 +14,43 @@ Page({
     sex_ch: '请选择性别'
   },
   addInfo: function () {
-    wx.cloud.callFunction({
-      name: 'login',
-    }).then(res => {
-      // console.log(this.data.recordId)
-      
-      db.collection('user').doc(this.data.recordId).update({
-        // data 传入需要局部更新的数据
-        data: {
-          name: this.data.name,
-          age: this.data.age,
-          sex: this.data.sex
-        },
-        success: function (res) {
-          // console.log(res)
-        },
-        fail: function(res){
-          Toast.fail('出错了，请重试');
-        }
-      })
+    var _this=this
+    wx.request({
+      url: 'http://bishe.cn/index/updateuserinfo/updateuserinfo', //服务器获取token的api   
+      method: 'POST',
+      data: {
+        user_id:wx.getStorageSync('openid'),
+        name: _this.data.name,
+        age: _this.data.age,
+        sex: _this.data.sex
+      },
+      success: function (res) {
+        Toast.success('更改完成');
+      }
     })
   },
+    // wx.cloud.callFunction({
+    //   name: 'login',
+    // }).then(res => {
+
+      // console.log(this.data.recordId)
+      
+      // db.collection('user').doc(this.data.recordId).update({
+      //   // data 传入需要局部更新的数据
+      //   data: {
+      //     name: this.data.name,
+      //     age: this.data.age,
+      //     sex: this.data.sex
+      //   },
+      //   success: function (res) {
+      //     // console.log(res)
+      //   },
+      //   fail: function(res){
+      //     Toast.fail('出错了，请重试');
+      //   }
+      // })
+    // })
+  // },
   onChangeName(event) {
     // event.detail 为当前输入的值
     this.setData({
